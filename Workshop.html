@@ -1,0 +1,1892 @@
+{
+ "metadata": {
+  "name": "",
+  "signature": "sha256:8419e59090f978af464dd1eeec0226efc634bdbbe78d00c1a07cd3517727dd0e"
+ },
+ "nbformat": 3,
+ "nbformat_minor": 0,
+ "worksheets": [
+  {
+   "cells": [
+    {
+     "cell_type": "heading",
+     "level": 1,
+     "metadata": {},
+     "source": [
+      "<br><br><center><font color=#505050 size=8 face='arial black'>Introduction to Python Workshop</font></center>\n",
+      "\n",
+      "<br><br><center><font color=#ff6347 size=5 face='arial black'>Kareem Carr</font></center><br><br>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "\n",
+      "<font color=#505050 size=5 face='arial black'>IQSS Research Consulting Team </font>\n",
+      "<br><br><font color=#505050 size=3 face='arial black'> Support for <font color=#ff6347>data analysis</font>, <font color=#ff6347>programming</font>, <font color=#ff6347>research design</font> and <font color=#ff6347>organization, storage and sharing of data</font>.</font>\n",
+      "<br><br><font color=#505050 size=3 face='arial black'>email: <a href=\"mailto:support@help.hmdc.harvard.edu\">support@help.hmdc.harvard.edu</a></font><br>\n",
+      "<font color=#505050 size=3 face='arial black'>website: http://projects.iq.harvard.edu/rtc </font>\n",
+      "<br><br><br>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<br>\n",
+      "<font color=#505050 size=3 face='arial black'>\n",
+      "<font size=5>Why learn python?</font>\n",
+      "<br><br>\n",
+      "<font color=\"#ff6347\">It's a good big data language.</font>\n",
+      "<br>\n",
+      "<ol>\n",
+      "\n",
+      "<li> Writing one-off scripts.</li><br>\n",
+      "<li> Text manipulation.</li><br>\n",
+      "<li> Moderately big data. .</li><br>\n",
+      "<li> One way of doing things. Simpler to learn. </li><br>\n",
+      "<li> Facilitates modularity and good documentation.</li><br>\n",
+      "<li> Good for combining code and programs from different sources.</li><br>\n",
+      "\n",
+      "<li> Solid numerical computing and machine learning platform.</li>\n",
+      "\n",
+      "</ol>\n",
+      "</font>\n",
+      "<br><br>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=3 face='arial black'> \n",
+      "The <a href=\"http://legacy.python.org/dev/peps/pep-0020/\">zen</a> of python\n",
+      "<blockquote>\n",
+      "<font color=#808080>\n",
+      "<p>Beautiful is better than ugly.</p>\n",
+      "<p>Explicit is better than implicit.</p>\n",
+      "<p>Simple is better than complex.</p>\n",
+      "</font>\n",
+      "</blockquote>\n",
+      "</font>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<br><center><font color=#ff6347 size=6 face='arial black'>Objectives of the Workshop</font></center><br>\n",
+      "\n",
+      "<font color=#505050 size=3 face='arial black'>\n",
+      "\n",
+      "<p>Before leaving the workshop:</p>\n",
+      "<ol>\n",
+      "\n",
+      "<font color=#ff6347><li>Know how to talk to the python interpreter</li><br></font>\n",
+      "\n",
+      "<font color=#505050><li>Know where to find out more about python</li><br></font>\n",
+      "\n",
+      "<font color=#505050><li>Know how to get data into python, use functions and do a few basic operations</li><br></font>\n",
+      "</ol>\n",
+      "\n",
+      "</font>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<br><br><center><font color=#ff6347 size=6 face='arial black'>The Basics of Python</font></center><br><br>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<br>\n",
+      "<font color=#505050 size=3 face='arial black'> During the exercise if you would like to insert a cell so you can add your own commands do <font color=\"#ff6347\">ctrl-m</font> and then press <font color=\"#ff6347\">b</font>.\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>What is the simplest python program?</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print \"Hello World!\""
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Hello World!\n"
+       ]
+      }
+     ],
+     "prompt_number": 1
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "%run simple.py"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>Built-in functions</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=3 face='arial black'></font>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "min(42,53) #minimum"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "max(42,53) #maximum"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "len(\"hello\") #length of the string \"hello\""
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "round(4.5) #round values"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "4 == 5 #boolean"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "\"hello\" == 'hello'"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=3 face='arial black'>There are four basic types of data in python: <font color=#ff6347>boolean</font>, <font color=#ff6347>strings</font>, <font color=#ff6347>floats</font> and <font color=#ff6347>integers</font>. Strings are text. Integers are integers, one of the two types of numbers. Floats are the equivalent of decimals.</font>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print type(1)\n",
+      "print type(2.4)\n",
+      "print type(\"hello\")\n",
+      "print type(True)\n",
+      "print type(min)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "<type 'int'>\n",
+        "<type 'float'>\n",
+        "<type 'str'>\n",
+        "<type 'bool'>\n",
+        "<type 'builtin_function_or_method'>\n"
+       ]
+      }
+     ],
+     "prompt_number": 1
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=3 face='arial black'> Using variables</font>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "x = 4\n",
+      "y = 5\n",
+      "z = x+y\n",
+      "print x, y, z"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "x = 5\n",
+      "print type(x)\n",
+      "x = \"hello\"\n",
+      "print type(x)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 3,
+     "metadata": {},
+     "source": [
+      "Operations with strings"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "\"Hello. How are you today?\".split()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print \"\".join(['Hello.', 'How', 'are', 'you', 'today?'])"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print \" \".join(['Hello.', 'How', 'are', 'you', 'today?'])"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "\"Hello.\".startswith(\"H\")"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "\"Hello.\".startswith(\"h\")"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "\"Hello.\".endswith(\".\")"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print \"H\" in \"Hello\" #returns a boolean \n",
+      "print \"Hello\" in \"Hello. How are you today?\" #returns a boolean"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {},
+     "source": [
+      "Getting more functions using modules"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=3 face='arial black'>You can use the import statement to get more functions in python</font>"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 3,
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>string</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "#https://docs.python.org/2/library/string.html\n",
+      "import string"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print string.punctuation\n",
+      "print string.digits\n",
+      "print string.ascii_letters"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 3,
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>math</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "#https://docs.python.org/2/library/math.html\n",
+      "import math"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print math.log(0.2)\n",
+      "print math.exp(4)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 3,
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>random</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "#https://docs.python.org/2/library/random.html\n",
+      "import random"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print random.random() # random real number between 0 and 1\n",
+      "print random.randint(0,5) #random integer between 0 and 5"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 3,
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>user-defined functions</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "def f(x):\n",
+      "    return x+1\n",
+      "\n",
+      "print f(2)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "def f(x,y):\n",
+      "    return x+y\n",
+      "\n",
+      "print f(2,3)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "def f(first_name,last_name):\n",
+      "    first_initial = first_name[0]\n",
+      "    last_initial = last_name[0]\n",
+      "    return first_initial+\".\"+last_initial+\".\"\n",
+      "\n",
+      "print f(\"John\",\"Smith\")"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 3,
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>user-defined modules</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "import myfile"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "myfile.f(1,3)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<br><center><font color=#ff6347 size=6 face='arial black'>Objectives of the Workshop</font></center><br>\n",
+      "\n",
+      "<font color=#505050 size=3 face='arial black'>\n",
+      "\n",
+      "<p>Before leaving the workshop:</p>\n",
+      "<ol>\n",
+      "<font color=#ff6347><li>Have working python environment on your laptop</li><br></font>\n",
+      "\n",
+      "<font color=#ff6347><li>Know how to talk to the python interpreter</li><br></font>\n",
+      "\n",
+      "<font color=#505050><li>Know where to find out more about python</li><br></font>\n",
+      "\n",
+      "<font color=#505050><li>Know how to get data into python, use functions and do a few basic operations</li><br></font>\n",
+      "</ol>\n",
+      "\n",
+      "</font>\n"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<br><br><center><font color=#ff6347 size=6 face='arial black'>Getting Help</font></center><br><br>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=3 face='arial black'>\n",
+      "\n",
+      "<font size=4>Books</font> <br> \n",
+      "\n",
+      "<ol>\n",
+      "\n",
+      "<li><a href=\"http://learnpythonthehardway.org/\">Python the Hard Way</a> </li>\n",
+      "\n",
+      "<li><a href=\"http://shop.oreilly.com/category/browse-subjects/programming/python.do\">Oreilly Books</a></li>\n",
+      "\n",
+      "<li><a href=\"http://shop.oreilly.com/product/0636920028154.do\">Learning Python</a></li>\n",
+      "\n",
+      "</ol>\n",
+      "<br><br>\n",
+      "<font size=4>Websites</font>\n",
+      "<ol>\n",
+      "<li><a href=\"https://www.python.org/\">Python.org</a></li>\n",
+      "\n",
+      "<li><a href=\"http://stackoverflow.com/\">Stack Overflow</a></li>\n",
+      "</ol>\n",
+      "</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "help(math.exp)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "math.exp?"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "help(\"math\")"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "dir(math)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "import myfile"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "help(myfile.g)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<br><center><font color=#ff6347 size=6 face='arial black'>Objectives of the Workshop</font></center><br>\n",
+      "\n",
+      "<font color=#505050 size=3 face='arial black'>\n",
+      "\n",
+      "<p>Before leaving the workshop:</p>\n",
+      "<ol>\n",
+      "<font color=#ff6347><li>Have working python environment on your laptop</li><br></font>\n",
+      "\n",
+      "<font color=#ff6347><li>Know how to talk to the python interpreter</li><br></font>\n",
+      "\n",
+      "<font color=#ff6347><li>Know where to find out more about python</li><br></font>\n",
+      "\n",
+      "<font color=#505050><li>Know how to get data into python, use functions and do a few basic operations</li><br></font>\n",
+      "</ol>\n",
+      "\n",
+      "</font>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<br><br><center><font color=#ff6347 size=6 face='arial black'>Complex Data Types</font></center><br><br>"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 3,
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>lists</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "\"A camel can go periods of time without drinking water.\".split()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "x = \"A camel can go periods of time without drinking water.\".split()\n",
+      "type(x)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "words = \"A camel can go periods of time without drinking water.\".split()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print words[0]\n",
+      "print words[1]\n",
+      "print words[9]\n",
+      "print words[-1]\n",
+      "print words[1:3]\n",
+      "print words[1:]\n",
+      "print words[:3]\n",
+      "print len(words)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "range(5)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "x = ['a','c']\n",
+      "\n",
+      "print x\n",
+      "x.append('b')\n",
+      "print x\n",
+      "\n",
+      "x.sort()\n",
+      "print x\n",
+      "\n",
+      "x.remove('a')\n",
+      "print x\n",
+      "\n"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "for thing in range(5):\n",
+      "    print thing "
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "for item in range(5):\n",
+      "    print item "
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "for word in words:\n",
+      "    print word"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "for word in words:\n",
+      "    if word.startswith(\"c\"):\n",
+      "        print word"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "[word for word in words]"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "[len(word) for word in words]"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "[len(word) for word in words if word.startswith('c')]"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "map(len,words)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "def startswith_c(word):\n",
+      "    return word.startswith('c')\n",
+      "\n",
+      "print filter(startswith_c, words)\n",
+      "print map(len, filter(startswith_c, words) )"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 3,
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>dictionaries</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "category=dict()\n",
+      "category[\"apple\"]=\"fruit\"\n",
+      "category[\"banana\"]=\"fruit\"\n",
+      "category[\"cherry\"]=\"fruit\"\n",
+      "category[\"celery\"]=\"vegetable\"\n",
+      "category[\"tomato\"]=\"vegetable\""
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "category[\"apple\"]"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "category.keys()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "category.values()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "category.items()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print category"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "data = category.items()\n",
+      "print data"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "data[0]"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print data[0][0]\n",
+      "print data[0][1]"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 3,
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>numpy arrays</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "#http://wiki.scipy.org/Tentative_NumPy_Tutorial#head-6a1bc005bd80e1b19f812e1e64e0d25d50f99fe2\n",
+      "import numpy as np"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print [1,2,3,4]+[5,6,7,8]\n",
+      "print [1,2,3,4]+['a','b','c','d']\n",
+      "\n",
+      "x = [1,2,3,4]\n",
+      "y = np.array(x)\n",
+      "\n",
+      "print type(x)\n",
+      "print type(y)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "np.array([1,2,3,4])+np.array([5,6,7,8])"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "np.random.random(10)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "np.mean(np.random.random(1000))"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {},
+     "source": [
+      "<br><br><center><font color=#ff6347 size=6 face='arial black'>Manipulating External Data</font></center><br><br>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>reading and writing files</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "file = open(\"Pride_and_Prejudice.txt\")"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print type(file)\n",
+      "print file"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "file.read()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "file = open(\"Pride_and_Prejudice.txt\")"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "file.readline()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "file.readlines()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "file = open(\"Pride_and_Prejudice.txt\")\n",
+      "text = file.readlines()\n",
+      "for line in text:\n",
+      "    if line.startswith('At'): print line"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "file = open(\"Pride_and_Prejudice.txt\")\n",
+      "text = file.read()\n",
+      "text = text.split()\n",
+      "print len(text)\n",
+      "print np.mean( map(len,text) ) # mean word length"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "set(['a','b','a','c','c','a'])"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "file = open(\"Pride_and_Prejudice.txt\")\n",
+      "text = file.read()\n",
+      "text = text.split()\n",
+      "text = set(text)\n",
+      "print len(text)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>accessing webpages</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "#https://docs.python.org/2/library/urllib2.html\n",
+      "import urllib2\n",
+      "#Project Gutenberg. Copy of Alice in Wonderland\n",
+      "#http://www.gutenberg.org/cache/epub/11/pg11.txt\n",
+      "webpage = urllib2.urlopen(\"http://www.gutenberg.org/cache/epub/11/pg11.txt\")"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "text = webpage.readlines()\n",
+      "for line in text:\n",
+      "    if line.startswith('At'): print line"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "webpage = urllib2.urlopen(\"http://www.gutenberg.org/cache/epub/11/pg11.txt\")\n",
+      "outfile = open(\"output.txt\",'w')\n",
+      "text = webpage.readlines()\n",
+      "for line in text:\n",
+      "    if line.startswith('At'): outfile.write(line)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>file system</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "#https://docs.python.org/2/library/os.html\n",
+      "import os"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 33
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "for root, directories, filenames in os.walk(\".\"):\n",
+      "    print filenames"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "['.DS_Store', 'iris.csv', 'myfile.py', 'Pride_and_Prejudice.txt', 'simple.py', 'Workshop October 24.ipynb']\n",
+        "['Workshop October 24-checkpoint.ipynb']\n"
+       ]
+      }
+     ],
+     "prompt_number": 34
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "for root, directories, filenames in os.walk(\".\"):\n",
+      "    for filename in filenames:\n",
+      "        if filename.endswith(\".py\"): print filename"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "myfile.py\n",
+        "simple.py\n"
+       ]
+      }
+     ],
+     "prompt_number": 35
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "all_files=list()\n",
+      "\n",
+      "for root, directories, filenames in os.walk(\"..\"):\n",
+      "    for filename in filenames:\n",
+      "        if filename.endswith(\".py\"): all_files.append(file)\n",
+      "\n",
+      "print len(all_files)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "14331\n"
+       ]
+      }
+     ],
+     "prompt_number": 267
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "os.listdir(\".\")"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 288,
+       "text": [
+        "['.DS_Store',\n",
+        " '.ipynb_checkpoints',\n",
+        " 'iris.csv',\n",
+        " 'myfile.py',\n",
+        " 'Pride_and_Prejudice.txt',\n",
+        " 'simple.py',\n",
+        " 'Workshop October 24.ipynb']"
+       ]
+      }
+     ],
+     "prompt_number": 288
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "all_files=list()\n",
+      "\n",
+      "for root, directories, files in os.walk(\"..\"):\n",
+      "    for file in files:\n",
+      "        if file.endswith(\".py\"):\n",
+      "            file = open(file)\n",
+      "\n",
+      "print len(all_files)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>graphics</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "#http://matplotlib.org/\n",
+      "import matplotlib.pyplot as plt"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 9
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "plt.plot([1,2,3,4],[1,4,9,16])\n",
+      "plt.ylabel('y')\n",
+      "plt.xlabel('x')\n",
+      "plt.show()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "%matplotlib inline"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "plt.plot([1,2,3,4],[1,4,9,16],color=\"red\",linestyle='--')\n",
+      "plt.ylabel('y')\n",
+      "plt.xlabel('x')\n",
+      "plt.show()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "plt.plot([1,2,3,4],[1,4,9,16],color=\"red\",linestyle='--')\n",
+      "plt.plot([1,2,3,4],[3,7,9,8],color=\"blue\",linestyle='-.')\n",
+      "plt.ylabel('y')\n",
+      "plt.xlabel('x')\n",
+      "plt.show()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "file = open(\"Pride_and_Prejudice.txt\")\n",
+      "text = file.read()\n",
+      "text = text.split()\n",
+      "data = map(len, text)\n",
+      "plt.hist(data,color=\"#ff6347\")\n",
+      "plt.xlim(0,16)\n",
+      "plt.show()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "np.linspace(0.5,16.5,17)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "plt.hist(data,bins=np.linspace(0.5,16.5,17),color=\"#ff6347\")\n",
+      "plt.xlim(0,16)\n",
+      "plt.title('Distribution of word lengths in P & P')\n",
+      "plt.xlabel('word length')\n",
+      "plt.ylabel('frequency')\n",
+      "plt.show()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {},
+     "source": [
+      "<font color=#505050 size=4 face='arial black'>tabular data</font>\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "#http://pandas.pydata.org/\n",
+      "import pandas as pd"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 2
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "data = pd.read_csv(\"iris.csv\")\n",
+      "print data"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "     Species  sepal length  sepal width  petal length  petal width\n",
+        "0          0           5.1          3.5           1.4          0.2\n",
+        "1          0           4.9          3.0           1.4          0.2\n",
+        "2          0           4.7          3.2           1.3          0.2\n",
+        "3          0           4.6          3.1           1.5          0.2\n",
+        "4          0           5.0          3.6           1.4          0.2\n",
+        "5          0           5.4          3.9           1.7          0.4\n",
+        "6          0           4.6          3.4           1.4          0.3\n",
+        "7          0           5.0          3.4           1.5          0.2\n",
+        "8          0           4.4          2.9           1.4          0.2\n",
+        "9          0           4.9          3.1           1.5          0.1\n",
+        "10         0           5.4          3.7           1.5          0.2\n",
+        "11         0           4.8          3.4           1.6          0.2\n",
+        "12         0           4.8          3.0           1.4          0.1\n",
+        "13         0           4.3          3.0           1.1          0.1\n",
+        "14         0           5.8          4.0           1.2          0.2\n",
+        "15         0           5.7          4.4           1.5          0.4\n",
+        "16         0           5.4          3.9           1.3          0.4\n",
+        "17         0           5.1          3.5           1.4          0.3\n",
+        "18         0           5.7          3.8           1.7          0.3\n",
+        "19         0           5.1          3.8           1.5          0.3\n",
+        "20         0           5.4          3.4           1.7          0.2\n",
+        "21         0           5.1          3.7           1.5          0.4\n",
+        "22         0           4.6          3.6           1.0          0.2\n",
+        "23         0           5.1          3.3           1.7          0.5\n",
+        "24         0           4.8          3.4           1.9          0.2\n",
+        "25         0           5.0          3.0           1.6          0.2\n",
+        "26         0           5.0          3.4           1.6          0.4\n",
+        "27         0           5.2          3.5           1.5          0.2\n",
+        "28         0           5.2          3.4           1.4          0.2\n",
+        "29         0           4.7          3.2           1.6          0.2\n",
+        "..       ...           ...          ...           ...          ...\n",
+        "120        2           6.9          3.2           5.7          2.3\n",
+        "121        2           5.6          2.8           4.9          2.0\n",
+        "122        2           7.7          2.8           6.7          2.0\n",
+        "123        2           6.3          2.7           4.9          1.8\n",
+        "124        2           6.7          3.3           5.7          2.1\n",
+        "125        2           7.2          3.2           6.0          1.8\n",
+        "126        2           6.2          2.8           4.8          1.8\n",
+        "127        2           6.1          3.0           4.9          1.8\n",
+        "128        2           6.4          2.8           5.6          2.1\n",
+        "129        2           7.2          3.0           5.8          1.6\n",
+        "130        2           7.4          2.8           6.1          1.9\n",
+        "131        2           7.9          3.8           6.4          2.0\n",
+        "132        2           6.4          2.8           5.6          2.2\n",
+        "133        2           6.3          2.8           5.1          1.5\n",
+        "134        2           6.1          2.6           5.6          1.4\n",
+        "135        2           7.7          3.0           6.1          2.3\n",
+        "136        2           6.3          3.4           5.6          2.4\n",
+        "137        2           6.4          3.1           5.5          1.8\n",
+        "138        2           6.0          3.0           4.8          1.8\n",
+        "139        2           6.9          3.1           5.4          2.1\n",
+        "140        2           6.7          3.1           5.6          2.4\n",
+        "141        2           6.9          3.1           5.1          2.3\n",
+        "142        2           5.8          2.7           5.1          1.9\n",
+        "143        2           6.8          3.2           5.9          2.3\n",
+        "144        2           6.7          3.3           5.7          2.5\n",
+        "145        2           6.7          3.0           5.2          2.3\n",
+        "146        2           6.3          2.5           5.0          1.9\n",
+        "147        2           6.5          3.0           5.2          2.0\n",
+        "148        2           6.2          3.4           5.4          2.3\n",
+        "149        2           5.9          3.0           5.1          1.8\n",
+        "\n",
+        "[150 rows x 5 columns]\n"
+       ]
+      }
+     ],
+     "prompt_number": 3
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "data.columns"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 4,
+       "text": [
+        "Index([u'Species', u'sepal length', u'sepal width', u'petal length', u'petal width'], dtype='object')"
+       ]
+      }
+     ],
+     "prompt_number": 4
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "data.index"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 5,
+       "text": [
+        "Int64Index([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, ...], dtype='int64')"
+       ]
+      }
+     ],
+     "prompt_number": 5
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "data[\"sepal length\"]"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 6,
+       "text": [
+        "0     5.1\n",
+        "1     4.9\n",
+        "2     4.7\n",
+        "3     4.6\n",
+        "4     5.0\n",
+        "5     5.4\n",
+        "6     4.6\n",
+        "7     5.0\n",
+        "8     4.4\n",
+        "9     4.9\n",
+        "10    5.4\n",
+        "11    4.8\n",
+        "12    4.8\n",
+        "13    4.3\n",
+        "14    5.8\n",
+        "...\n",
+        "135    7.7\n",
+        "136    6.3\n",
+        "137    6.4\n",
+        "138    6.0\n",
+        "139    6.9\n",
+        "140    6.7\n",
+        "141    6.9\n",
+        "142    5.8\n",
+        "143    6.8\n",
+        "144    6.7\n",
+        "145    6.7\n",
+        "146    6.3\n",
+        "147    6.5\n",
+        "148    6.2\n",
+        "149    5.9\n",
+        "Name: sepal length, Length: 150, dtype: float64"
+       ]
+      }
+     ],
+     "prompt_number": 6
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print data.ix[0]\n",
+      "print\n",
+      "print data.ix[0,1:2]"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Species         0.0\n",
+        "sepal length    5.1\n",
+        "sepal width     3.5\n",
+        "petal length    1.4\n",
+        "petal width     0.2\n",
+        "Name: 0, dtype: float64\n",
+        "\n",
+        "sepal length    5.1\n",
+        "Name: 0, dtype: float64\n"
+       ]
+      }
+     ],
+     "prompt_number": 7
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "plt.scatter(data[\"sepal length\"],data[\"sepal width\"],color=\"#ff6347\")"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 10,
+       "text": [
+        "<matplotlib.collections.PathCollection at 0x10ef781d0>"
+       ]
+      }
+     ],
+     "prompt_number": 10
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "%load_ext rpy2.ipython"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 16
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "%Rpush data"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 17
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "%R print(summary(data))"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "metadata": {},
+       "output_type": "display_data",
+       "text": [
+        "    Species   sepal.length    sepal.width     petal.length    petal.width   \n",
+        " Min.   :0   Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  \n",
+        " 1st Qu.:0   1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  \n",
+        " Median :1   Median :5.800   Median :3.000   Median :4.350   Median :1.300  \n",
+        " Mean   :1   Mean   :5.843   Mean   :3.054   Mean   :3.759   Mean   :1.199  \n",
+        " 3rd Qu.:2   3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  \n",
+        " Max.   :2   Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  \n"
+       ]
+      }
+     ],
+     "prompt_number": 18
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "%R plot(data$sepal.length,data$sepal.width)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "metadata": {},
+       "output_type": "display_data",
+       "png": "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\nsPJZMAlkMwGOAWfz1WPdSYAESIAEspYAFXDWXjpWnARIgARIIJsJUAFn89Vj3UmABEiABLKWABVw\n1l46VpwESIAESCCbCVABZ/PVY91JgARIgASylgBnQWftpWPFSSCSAFyEwrf4iSeeKMcff3zkj0ns\nrV692jpYgbewbA22kUSzeQoJZIwAe8AZQ82CSCB9BE499VQbXQuRnbC++dZbby1WYQ8++KDcdttt\nds06gog88cQTxcqPJ5MACUQTYA84mgmPkEBWEbjooousRzI4FYF8/vnn0rRpU9sLPv/884vcllde\necUq8D/++MM61XAiRsHnNx2VFBknTyCBuATYA46Lhj+QQHYQ+OijjwSRiRypV6+ejVIED1/JCOI8\nL1y40PVohbCZCEGJ4xQSIIHUEaACTh1L5kQCgRCAS8itW7dGlI2xYCjOZKR06dKC3q9X4PN77733\n9h7iNgmQQDEJ0ARdTIA8nQSCJtC9e3dBbOP69evbOMaDBw8WmJEdk3RR64ewmTfeeKP1943AFIsX\nL7YhKDdt2lTUrJieBEigAAJUwAXA4U8kkA0EoCwRm7du3bpSvnx52/NFcIRkwwI2atTImpzPOuss\nOfLII23PF0EWEGyBQgIkkDoCVMCpY8mcSCAwAsOHDxf8S5VgstWKFStSlR3zIQESiEGAY8AxoPAQ\nCZAACZAACaSbABVwugkzfxIgARIgARKIQYAKOAYUHiIBEiABEiCBdBOgAk43YeZPAiRAAiRAAjEI\nUAHHgMJDJEACJEACJJBuAlTA6SbM/EmABEiABEggBgEq4BhQeIgESIAESIAE0k2ACjjdhJk/CZAA\nCZAACcQgQAUcAwoPkQAJkAAJkEC6CVABp5sw8ycBEiABEiCBGASogGNA4SESIAESIAESSDcBKuB0\nE2b+JEACJEACJBCDABVwDCg8RAIkQAIkQALpJkAFnG7CzJ8ESIAESIAEYhCgAo4BhYdIgARIgARI\nIN0EQqeAd+/eLb/88ku62838SYAESIAESCBQAqFQwH/++afccsstUr16dSlVqpRUqFBB9t13X6lX\nr56MGzcuUEAsnARIgARIgATSQWDPdGRa1Dz79u0rmzdvlunTp0vNmjWt8v3tt99k5cqVcu2118rO\nnTulT58+Rc2W6UmABEiABEggtARC0QOePXu2jBkzRurXry9ly5aVEiVKSLly5eTEE0+UESNGyKuv\n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\n"
+      }
+     ],
+     "prompt_number": 21
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<br><br><center><font color=#ff6347 size=6 face='arial black'>Future directions</font></center><br>\n",
+      "\n",
+      "<font color=#ff6347>Style guide</font> <br>\n",
+      "&nbsp;&nbsp;&nbsp;&nbsp; official python style guide: <a href=\"http://legacy.python.org/dev/peps/pep-0008/\">PEP-8</a>\n",
+      "\n",
+      "<font color=#505050 size=4 face='arial black'>\n",
+      "<font color=#ff6347>Graphics</font> <br>\n",
+      "&nbsp;&nbsp;&nbsp;&nbsp; matplotlib, seaborn <br><br>\n",
+      "\n",
+      "<font color=#505050 size=4 face='arial black'>\n",
+      "<font color=#ff6347>Webscraping</font> <br>\n",
+      "&nbsp;&nbsp;&nbsp;&nbsp; urllib2, lxml, BeautifulSoup <br><br>\n",
+      "\n",
+      "<font color=#ff6347>Quantitative Data Analysis</font> <br>\n",
+      "&nbsp;&nbsp;&nbsp;&nbsp; numpy, scipy, scikit-learn, statsmodels <br><br>\n",
+      "\n",
+      "<font color=#ff6347>Text analysis</font> <br>\n",
+      "&nbsp;&nbsp;&nbsp;&nbsp; string, nltk <br><br>\n",
+      "\n",
+      "<font color=#ff6347>Social Network Analysis</font> <br>\n",
+      "&nbsp;&nbsp;&nbsp;&nbsp; igraph, networkx <br><br>\n",
+      "\n",
+      "<font color=#ff6347>Using python with R</font> <br>\n",
+      "&nbsp;&nbsp;&nbsp;&nbsp; rpy2 <br><br>\n",
+      "\n",
+      " </font>\n",
+      " <br><br>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<br><br><center><font color=#ff6347 size=6 face='arial black'>Python Culture and the Zen of Python</font></center><br>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<br>\n",
+      "<font color=#505050 size=3 face='arial black'> The culture of python is to have code that is simple and readable but gets the job done. The most important of these three is getting the job done!</font>.\n",
+      "<br>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "#http://stackoverflow.com/questions/228181/the-zen-of-python\n",
+      "import this"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 1,
+     "metadata": {},
+     "source": [
+      "<br><br><br><center><font color=#ff6347 size=6 face='arial black'>Objectives of the Workshop</font></center><br>\n",
+      "\n",
+      "<font color=#505050 size=3 face='arial black'>\n",
+      "\n",
+      "<p>Before leaving the workshop:</p>\n",
+      "<ol>\n",
+      "<font color=#ff6347><li>Have working python environment on your laptop</li><br></font>\n",
+      "\n",
+      "<font color=#ff6347><li>Know how to talk to the python interpreter</li><br></font>\n",
+      "\n",
+      "<font color=#ff6347><li>Know where to find out more about python</li><br></font>\n",
+      "\n",
+      "<font color=#ff6347><li>Know how to get data into python, use functions and do a few basic operations</li><br></font>\n",
+      "</ol>\n",
+      "\n",
+      "</font><br><br>"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "<br><br><br><center><font color=#ff6347 size=8 face='arial black'>Thanks for listening!</font></center><br><br>"
+     ]
+    }
+   ],
+   "metadata": {}
+  }
+ ]
+}
